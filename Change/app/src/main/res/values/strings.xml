@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Changes</string>
+    <string name="ex_info">intent Action 及界面设计</string>
+    <string name="ex_name">综合应用练习</string>
+    <string name="ex_copyright">（C）2019 曾伟 南昌大学软件学院</string>
+    <string name="func_phone">拨打电话</string>
+    <string name="func_sms">发送短信</string>
+    <string name="func_url">浏览网址</string>
+    <string name="func_music">音乐播放</string>
+    <string name="hint_input_number">请输入电话号码</string>
+    <string name="hint_input_url">请输入网址</string>
+    <string name="hint_input_sms">请输入短信内容</string>
+    <string name="title_file_list">文件列表</string>
+    <string name="exit_warning">再按一次退出程序</string>
+</resources>
+

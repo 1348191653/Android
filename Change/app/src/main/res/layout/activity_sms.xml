@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+    <EditText
+        android:id="@+id/edit_sms_num"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_input_number"/>
+    <EditText
+        android:id="@+id/edit_sms_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:hint="@string/hint_input_sms"/>
+    <ImageView
+        android:id="@+id/btn_start_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:src="@drawable/send_sms"/>
+</LinearLayout>
+</RelativeLayout>
