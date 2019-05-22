@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4169E1"
+        android:padding="8dp"
+       >
+        <ImageView
+            android:src="@mipmap/head"
+            android:layout_marginLeft="1dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_width="80dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="50dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:paddingTop="5dp"
+            android:textColor="#ffffff"
+            android:text="记事本"/>
+        <Button
+            android:id="@+id/Create"
+            android:gravity="right"
+            android:textAlignment="center"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="#6495ED"
+            android:layout_marginLeft="330dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+           android:paddingTop="5dp"
+            android:text="新建" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_bwlList"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
