@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:padding="5dp"
+        android:layout_height="60dp">
+      <EditText
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/editshape"
+          android:paddingLeft="20dp"
+          android:textColor="@color/bg_gray"
+          android:hint="搜索新闻\博客"
+          android:layout_weight="6"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/sousuo"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    //轮播图模块
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_marginTop="70dp">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:background="#33000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片标题"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/dot_0"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@mipmap/dots_yes"/>
+
+            <View
+                android:id="@+id/dot_1"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@mipmap/dots_not"/>
+            <View
+                android:id="@+id/dot_2"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@mipmap/dots_not"/>
+            <View
+                android:id="@+id/dot_3"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@mipmap/dots_not"/>
+            <View
+                android:id="@+id/dot_4"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@mipmap/dots_not"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+    //item模块
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="360dp"
+        ></ListView>
+</FrameLayout>
